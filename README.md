@@ -16,9 +16,9 @@ of capacity C.
 
 ## (1) Give a recursive definition of the function $P(C)$.
 
-$P(C) = max(P(C), P(C-weight[i])+P(i))$, 
+$P(C) = max(P(C), P(C-weight[i])+P(i))$ 
 
-$weight[i]<C$
+$weight[i] < C$
 
 $i:\text{any object available}$
 
