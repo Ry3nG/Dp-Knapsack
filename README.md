@@ -51,7 +51,7 @@ Following the recursive formula, we can construct the botton-up algorithm as fol
 ```
 Time complexity: $Θ((W+1)*N)$. As we can take all items multiple number of times, we check all of them $(1\text{ to }N)$ for all weights from $0$ to $W$. Hence, $\text{time complexity} = (W+1) * N$
 
-Space complexity: $Θ(W+1)$. We maintain a dp array of size $W+1$, where $dp[i]$ denotes the maximum profit for capacity $i$. Hence, $text{space complexity} = W+1$
+Space complexity: $Θ(W+1)$. We maintain a dp array of size $W+1$, where $dp[i]$ denotes the maximum profit for capacity $i$. Hence, $\text{space complexity} = W+1$
 
 ## (4) Code your algorithm in a programming language
 
