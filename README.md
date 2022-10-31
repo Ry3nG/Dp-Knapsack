@@ -1,24 +1,24 @@
-# Dp-Knapsack
+# DP-Knapsack
 NTU SC2001 Example Class Project
-We have a knapsack of capacity weight C (a positive integer) and n types of objects.
+We have a knapsack of capacity weight $C$ (a positive integer) and $n$ types of objects.
 
 ## Problem Statement
 
-Each object of the ith type has weight wi and profit pi (all wi and all pi are positive
-integers, i = 0, 1, …, n-1). 
+Each object of the ith type has weight $w_i$ and profit $p_i$ (all $w_i$ and all $p_i$ are positive
+integers, $i = 0, 1, …, n-1$). 
 
 There are unlimited supplies of each type of objects.
 
 Find the largest total profit of any set of the objects that fits in the knapsack.
 
-Let P(C) be the maximum profit that can be made by packing objects into the knapsack
-of capacity C.
+Let $P(C)$ be the maximum profit that can be made by packing objects into the knapsack
+of capacity $C$.
 
 ## (1) Give a recursive definition of the function $P(C)$.
 
 $P(C) = max(P(C), P(C-weight[i])+P(i))$ 
 
-$weight[i] < C$
+$for\ weight[i] < C$
 
 $i:\text{any object available}$
 
@@ -54,9 +54,9 @@ Following the recursive formula, we can construct the botton-up algorithm as fol
     }
     return dp[capacity]
 ```
-Time complexity: $Θ((W+1)*N)$. As we can take all items multiple number of times, we check all of them $(1\text{ to }N)$ for all weights from $0$ to $W$. Hence, $\text{time complexity} = (W+1) * N$
+Time complexity: $\Theta((W+1)*N)$. As we can take all items multiple number of times, we check all of them $(1\text{ to }N)$ for all weights from $0$ to $W$. Hence, $\text{time complexity} = (W+1) * N$
 
-Space complexity: $Θ(W+1)$. We maintain a dp array of size $W+1$, where $dp[i]$ denotes the maximum profit for capacity $i$. Hence, $\text{space complexity} = W+1$
+Space complexity: $\Theta(W+1)$. We maintain a dp array of size $W+1$, where $dp[i]$ denotes the maximum profit for capacity $i$. Hence, $\text{space complexity} = W+1$
 
 ## (4) Code your algorithm in a programming language
 
