@@ -41,17 +41,17 @@ Following the recursive formula, we can construct the botton-up algorithm as fol
 
 ```
     dp[] = int[capacity+1];
-    for(every object i){
-        for(every capacity j){
-            if weight[i] <= j
+    for(every object i < n){
+        for(every capacity j < C){
+            if w[i] <= j
                 dp[j] = max(dp[j], p[i] + dp[j - W[i]])
         }
     }
     return dp[capacity]
 ```
-Time complexity: $Θ((W+1)*N)$. As we can take all items multiple number of times, we check all of them $(1 to N)$ for all weights from $0$ to $W$. Hence, $time complexity = (W+1) * N.$
+Time complexity: $Θ((W+1)*N)$. As we can take all items multiple number of times, we check all of them $(1\text{ to }N)$ for all weights from $0$ to $W$. Hence, $\text{time complexity} = (W+1) * N$
 
-Space complexity: $Θ(W+1)$. We maintain a dp array of size $W+1$, where $dp[i]$ denotes the maximum profit for capacity $i$. Hence, $space complexity = W+1$
+Space complexity: $Θ(W+1)$. We maintain a dp array of size $W+1$, where $dp[i]$ denotes the maximum profit for capacity $i$. Hence, $text{space complexity} = W+1$
 
 ## (4) Code your algorithm in a programming language
 
