@@ -17,9 +17,10 @@ of capacity $C$.
 ## (1) Give a recursive definition of the function $P(C)$.
 
 
-$P(C) = 0; \text{when } C = 0 \text{ or } n = 0$
+$P(C) = 0;\quad$
+$\text{when } C = 0 \text{ or } n = 0$
 
-$P(C) = max(P(C), P(C-weight[i])+P(i));$ 
+$P(C) = max(P(C), P(C-weight[i])+P(i));\quad$ 
 $\text{for } weight[i] < C$
 
 $i:\text{any object available}$
