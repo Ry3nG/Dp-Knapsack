@@ -28,6 +28,11 @@ $i:\text{any object available}$
 | $W_i$ | 4   | 6   | 8   |
 | $P_i$ | 7   | 6   | 9   |
 
+<figure>
+<img src = q2.png>
+<figcaption align = "center"><b>Fig1. Subproblem graph</b></figcaption>
+</figure>
+
 
 ## (3) Give a dynamic programming algorithm to compute the maximum profit, given a knapsack of capacity $C$, $n$ types of objects with weights $W_i$ and profits $P_i$ using the bottom up approach.
 
